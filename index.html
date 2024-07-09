@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Encriptador de Texto</title>
+        <link rel="stylesheet" href="./styles/style.css" />
+    </head>
+    <body>
+        <div class="img__container">
+            <img src="./assets/Logo.png" alt="Logo" />
+        </div>
+        <main class="container">
+            <div class="first__container">
+                <div class="elements__container">
+                    <textarea
+                        id="text-textarea"
+                        placeholder="Ingresa el texto aquí"
+                        class="textarea__first__container"
+                    ></textarea>
+                    <p class="text__first__container">
+                        Solo letras minúsculas y sin acentos
+                    </p>
+                    <div class="buttons__container">
+                        <button id="encrypt" class="primary__button">
+                            Encriptar
+                        </button>
+                        <button id="decrypt" class="secondary__button">
+                            Desencriptar
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="second__container">
+                <div class="card__container">
+                    <textarea
+                        id="text"
+                        class="textarea__second__container"
+                    ></textarea>
+                    <div class="card__img__container">
+                        <img
+                            src="./assets/Muñeco.png"
+                            alt="Logo"
+                            class="card__image"
+                        />
+                    </div>
+                    <div class="text__container">
+                        <h4 class="title__second__container">
+                            Ningún mensaje fue encontrado
+                        </h4>
+                        <p class="text__second__container">
+                            Ingresa el texto que desees encriptar o
+                            desencriptar.
+                        </p>
+                    </div>
+                    <div class="button__container">
+                        <button id="copy" class="secondary__button">
+                            Copiar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="./app.js"></script>
+    </body>
+</html>
